@@ -1,0 +1,166 @@
+apiVersion: v1
+data:
+  ca.pem: |-
+    -----BEGIN CERTIFICATE-----
+    MIIDazCCAlOgAwIBAgIIE6BL+l9goMkwDQYJKoZIhvcNAQELBQAwJjEkMCIGA1UE
+    AwwbaW5ncmVzcy1vcGVyYXRvckAxNjk5MDI2MDc3MB4XDTIzMTEwMzE1NDExN1oX
+    DTI1MTEwMjE1NDExOFowJTEjMCEGA1UEAwwaKi5hcHBzLmJlZWhpdmUuZXhhbXBs
+    ZS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDFz26G02Qw27SF
+    Tt9BhHNeZT9v4GL2zjPp0/JWxgpkiUPYKh8wpxVDP2fwB1fkicOHzj7PIFMbhVZl
+    IWY14zhNld68cseIqLqGI3B0zdgJt4ab82Wq8YEVmMVpAApDuiRyt+wRgaxu3DD/
+    NgMvQIeAEeqGbLm/tJhI/p8IL940j+UySllADdz9kyXEFM/PU/6wDZdaM/bogRqD
+    +oeFL7Apv/QQ29sE7OIDCSvLc4Yw5a1A0HYQvkKwrwrWWcBSm+NWrPoPGeoJjqi9
+    vE+mE4L6dH7Y9OtbgopISVtX21eGaZgv9Z95PZ4AL76dhmmIiwrsf/dasXV8qgDv
+    OGHhLsA1AgMBAAGjgZ0wgZowDgYDVR0PAQH/BAQDAgWgMBMGA1UdJQQMMAoGCCsG
+    AQUFBwMBMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFHpeEzBY1F2IuuqLpv3M8l4V
+    21EbMB8GA1UdIwQYMBaAFLBbTNuzP90qnYSfcaa8JP/HpKKBMCUGA1UdEQQeMByC
+    GiouYXBwcy5iZWVoaXZlLmV4YW1wbGUub3JnMA0GCSqGSIb3DQEBCwUAA4IBAQA8
+    frm4s/COCGk2ipAmJkew2HsOja8wxi5aYsXIsNaclMPrqfY8wZwOVuVEFQpoGjyZ
+    Ulp78gTcirVdpY9byouPdxsilH9AmhjQ22Gkw0FjlKPBry9RpOY/RybqvTKBTvVE
+    u6VfGZBhd5hx+0rQmmFy7duVf5vQ5Te0e7Da21WRIiFHVKno910AWrJI5Hp2OvzI
+    lKKQds76KHHNyVJ8ZWxXmFwAZnXBogCwWatO3Ynxs8COKnn/4SIuMIMEvibxImjl
+    XJmWRyuCEmvb3pkLcGaZcnMub3yPgPl6HVp7vkriN7SoScvknmdAmZDgW11zzcjo
+    tkBeyAY1ElxB2keSjFkc
+    -----END CERTIFICATE-----
+    -----BEGIN CERTIFICATE-----
+    MIIDDDCCAfSgAwIBAgIBATANBgkqhkiG9w0BAQsFADAmMSQwIgYDVQQDDBtpbmdy
+    ZXNzLW9wZXJhdG9yQDE2OTkwMjYwNzcwHhcNMjMxMTAzMTU0MTE3WhcNMjUxMTAy
+    MTU0MTE4WjAmMSQwIgYDVQQDDBtpbmdyZXNzLW9wZXJhdG9yQDE2OTkwMjYwNzcw
+    ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCynaZISAd6PfzGpaeqmo7q
+    ji3dFQDPJeN4KO7ht4DYgltxWk/oxA5f3ngKNGnv+GwrYsYzGCmw1X0uUNgN96W0
+    EjF54ef1+hWNBNPa5FDNb9xFPAwFO2GzYCWw70OaAmnRLvFe5D0yXp7XqVnAWZp6
+    4e4YH/sbI+75awLgpCMuOeiUAiVDANK6uCCaIhZnXZKiVSHJhRdhI1nzVtrjOMys
+    PQQ6Qc3bTFs1/pvA0EfeUMgqJmUc5DpzhoGmchV+plEPu0OyQh9a2VGYUTIiKnWk
+    8RbL/t8ElwR05qPAdNHUuuQR+QPm2L2wk+zTwxdgkG4nROQPf71wAp1C1TBi9R37
+    AgMBAAGjRTBDMA4GA1UdDwEB/wQEAwICpDASBgNVHRMBAf8ECDAGAQH/AgEAMB0G
+    A1UdDgQWBBSwW0zbsz/dKp2En3GmvCT/x6SigTANBgkqhkiG9w0BAQsFAAOCAQEA
+    RqQWrIZxV0xIJ7fLGdfiory4kJ4CGxvIrgBPl7C95RgztkikM2+RFz2lgAIPS4v/
+    tWGljqSur9PET/e04w0KLRfc2gZV53DP4NFtwzkQy2J7zprqZANurIvVpDrgL9VO
+    UDd1fcoTB+6JK0g756Ew4+/khbCwq9Uhki1IUaToFXAHdzbiHl6wEBE0bgfcPBcN
+    gsCB47NRtJCd+bUblVSQOVowSUnzKKQzxnzlBGOPjtAC+vbzXGq1MpHnTKdS2YgZ
+    JaW69449vzeEfuiewxnDGCjLdE3HMwHmU4cZo2PmcxcEoLy+gnGoJ0BRTCbAsNg/
+    IEwUiXNbKf05XVu+oqCIpA==
+    -----END CERTIFICATE-----
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: export-ca-cm-mastodon-export
+---
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  annotations:
+    kubemacpool.io/transaction-timestamp: "2023-11-08T14:04:59.06584953Z"
+    kubevirt.io/latest-observed-api-version: v1
+    kubevirt.io/storage-observed-api-version: v1alpha3
+    vm.kubevirt.io/validations: |
+      [
+        {
+          "name": "minimal-required-memory",
+          "path": "jsonpath::.spec.domain.resources.requests.memory",
+          "rule": "integer",
+          "message": "This VM requires more memory.",
+          "min": 1610612736
+        }
+      ]
+  creationTimestamp: null
+  labels:
+    app: rhel9-anonymous-mastodon
+    vm.kubevirt.io/template: rhel9-server-small
+    vm.kubevirt.io/template.namespace: openshift
+    vm.kubevirt.io/template.revision: "1"
+    vm.kubevirt.io/template.version: v0.25.0
+  name: rhel9-anonymous-mastodon
+  namespace: beehive-virtual-machines
+spec:
+  dataVolumeTemplates:
+  - apiVersion: cdi.kubevirt.io/v1beta1
+    kind: DataVolume
+    metadata:
+      creationTimestamp: null
+      name: rhel9-anonymous-mastodon
+    spec:
+      source:
+        http:
+          certConfigMap: export-ca-cm-mastodon-export
+          secretExtraHeaders:
+          - header-secret-mastodon-export
+          url: https://virt-exportproxy-openshift-cnv.apps.beehive.example.org/api/export.kubevirt.io/v1alpha1/namespaces/beehive-virtual-machines/virtualmachineexports/mastodon-export/volumes/rhel9-anonymous-mastodon/disk.img.gz
+      sourceRef:
+        kind: DataSource
+        name: rhel9
+        namespace: openshift-virtualization-os-images
+      storage:
+        resources:
+          requests:
+            storage: 30Gi
+  running: false
+  template:
+    metadata:
+      annotations:
+        vm.kubevirt.io/flavor: small
+        vm.kubevirt.io/os: rhel9
+        vm.kubevirt.io/workload: server
+      creationTimestamp: null
+      labels:
+        kubevirt.io/domain: rhel9-anonymous-mastodon
+        kubevirt.io/size: small
+    spec:
+      domain:
+        cpu:
+          cores: 2
+          sockets: 1
+          threads: 1
+        devices:
+          disks:
+          - disk:
+              bus: virtio
+            name: rootdisk
+          - disk:
+              bus: virtio
+            name: cloudinitdisk
+          interfaces:
+          - macAddress: 02:29:73:00:00:00
+            masquerade: {}
+            model: virtio
+            name: default
+          networkInterfaceMultiqueue: true
+          rng: {}
+        features:
+          acpi: {}
+          smm:
+            enabled: true
+        firmware:
+          bootloader:
+            efi: {}
+        machine:
+          type: pc-q35-rhel9.2.0
+        resources:
+          requests:
+            memory: 4Gi
+      evictionStrategy: LiveMigrate
+      networks:
+      - name: default
+        pod: {}
+      terminationGracePeriodSeconds: 180
+      volumes:
+      - dataVolume:
+          name: rhel9-anonymous-mastodon
+        name: rootdisk
+      - cloudInitNoCloud:
+          userData: |-
+            #cloud-config
+            user: cloud-user
+            password: redhat1234
+            chpasswd: { expire: False }
+        name: cloudinitdisk
+status: {}
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: header-secret-mastodon-export
+stringData:
+  token: x-kubevirt-export-token:dgnC1oBXRsl3S4sYd4Ys
+---
