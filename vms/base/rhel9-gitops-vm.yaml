@@ -15,18 +15,18 @@ items:
           }
         ]
     labels:
-      app: rhel9-t3k1qx507av5x28j
+      app: rhel9-bitey-piranha
       kubevirt.io/dynamic-credentials-support: "true"
       vm.kubevirt.io/template: rhel9-desktop-medium
       vm.kubevirt.io/template.revision: "1"
       vm.kubevirt.io/template.version: v0.26.0
-    name: rhel9-t3k1qx507av5x28j
+    name: rhel9-bitey-piranha
   spec:
     dataVolumeTemplates:
     - apiVersion: cdi.kubevirt.io/v1beta1
       kind: DataVolume
       metadata:
-        name: rhel9-t3k1qx507av5x28j
+        name: rhel9-bitey-piranha
       spec:
         sourceRef:
           kind: DataSource
@@ -44,7 +44,7 @@ items:
           vm.kubevirt.io/os: rhel9
           vm.kubevirt.io/workload: desktop
         labels:
-          kubevirt.io/domain: rhel9-t3k1qx507av5x28j
+          kubevirt.io/domain: rhel9-bitey-piranha
           kubevirt.io/size: medium
       spec:
         domain:
@@ -86,7 +86,7 @@ items:
         terminationGracePeriodSeconds: 180
         volumes:
         - dataVolume:
-            name: rhel9-t3k1qx507av5x28j
+            name: rhel9-bitey-piranha
           name: rootdisk
         - cloudInitNoCloud:
             userData: |-
