@@ -88,7 +88,7 @@ items:
             userData: |-
               #cloud-config
               user: cloud-user
-              password: h5le-s0nn-r6u7
+              password: redhat1234
               chpasswd: { expire: False }
           name: cloudinitdisk
 kind: List
