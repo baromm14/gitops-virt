@@ -15,18 +15,18 @@ items:
           }
         ]
     labels:
-      app: rhel9-bitey-piranha
+      app: rhel9-beehive-vm1
       kubevirt.io/dynamic-credentials-support: "true"
-      vm.kubevirt.io/template: rhel9-desktop-medium
+      vm.kubevirt.io/template: rhel9-server-small
       vm.kubevirt.io/template.revision: "1"
       vm.kubevirt.io/template.version: v0.26.0
-    name: rhel9-bitey-piranha
+    name: rhel9-beehive-vm1
   spec:
     dataVolumeTemplates:
     - apiVersion: cdi.kubevirt.io/v1beta1
       kind: DataVolume
       metadata:
-        name: rhel9-bitey-piranha
+        name: rhel9-beehive-vm1
       spec:
         sourceRef:
           kind: DataSource
@@ -36,16 +36,16 @@ items:
           resources:
             requests:
               storage: 30Gi
-    running: false
+    running: true
     template:
       metadata:
         annotations:
-          vm.kubevirt.io/flavor: medium
+          vm.kubevirt.io/flavor: small
           vm.kubevirt.io/os: rhel9
-          vm.kubevirt.io/workload: desktop
+          vm.kubevirt.io/workload: server
         labels:
-          kubevirt.io/domain: rhel9-bitey-piranha
-          kubevirt.io/size: medium
+          kubevirt.io/domain: rhel9-beehive-vm1
+          kubevirt.io/size: small
       spec:
         domain:
           cpu:
@@ -60,10 +60,6 @@ items:
             - disk:
                 bus: virtio
               name: cloudinitdisk
-            inputs:
-            - bus: virtio
-              name: tablet
-              type: tablet
             interfaces:
             - masquerade: {}
               model: virtio
@@ -79,20 +75,20 @@ items:
           machine:
             type: pc-q35-rhel9.2.0
           memory:
-            guest: 4Gi
+            guest: 2Gi
         networks:
         - name: default
           pod: {}
         terminationGracePeriodSeconds: 180
         volumes:
         - dataVolume:
-            name: rhel9-bitey-piranha
+            name: rhel9-beehive-vm1
           name: rootdisk
         - cloudInitNoCloud:
             userData: |-
               #cloud-config
               user: cloud-user
-              password: fo5h-al6q-b35i
+              password: h5le-s0nn-r6u7
               chpasswd: { expire: False }
           name: cloudinitdisk
 kind: List
