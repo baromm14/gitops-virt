@@ -18,42 +18,29 @@ metadata:
   - kubevirt.io/virtualMachineControllerFinalize
   generation: 1
   labels:
-    app: rhel9-bitey-piranha
+    app: rhel9-surly-piranha
     kubevirt.io/dynamic-credentials-support: "true"
     vm.kubevirt.io/template: rhel9-desktop-medium
     vm.kubevirt.io/template.namespace: openshift
     vm.kubevirt.io/template.revision: "1"
     vm.kubevirt.io/template.version: v0.26.0
-  name: rhel9-bitey-piranha
+  name: rhel9-surly-piranha
   namespace: beehive-virtual-machines
   resourceVersion: "515347"
   uid: ec02bf51-1fe9-4cfe-82f0-348d8181211f
 spec:
-  running: true
-  template:
-    metadata:
-      annotations:
-        vm.kubevirt.io/flavor: medium
-        vm.kubevirt.io/os: rhel9
-        vm.kubevirt.io/workload: desktop
-      creationTimestamp: null
-      labels:
-        kubevirt.io/domain: rhel9-bitey-piranha
-        kubevirt.io/size: medium
-    spec:
-      architecture: amd64
-      domain:
-        cpu:
-          cores: 1
-          sockets: 1
-          threads: 1
-          disks:
-            - disk:
-                bus: virtio
-              name: surly-piranha-disk
-            - disk:
-                bus: virtio
-              name: cloudinitdisk
+  domain:
+    cpu:
+      cores: 1
+      sockets: 1
+      threads: 1
+      disks:
+        - disk:
+            bus: virtio
+            name: surly-piranha-disk
+        - disk:
+            bus: virtio
+            name: cloudinitdisk
       volumes:
         - persistentVolumeClaim:
             claimName: surly-piranha-disk
