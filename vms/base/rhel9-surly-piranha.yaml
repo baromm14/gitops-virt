@@ -1,0 +1,68 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  annotations:
+    kubevirt.io/latest-observed-api-version: v1
+    kubevirt.io/storage-observed-api-version: v1
+    vm.kubevirt.io/validations: |
+      [
+        {
+          "name": "minimal-required-memory",
+          "path": "jsonpath::.spec.domain.memory.guest",
+          "rule": "integer",
+          "message": "This VM requires more memory.",
+          "min": 1610612736
+        }
+      ]
+  finalizers:
+  - kubevirt.io/virtualMachineControllerFinalize
+  generation: 1
+  labels:
+    app: rhel9-bitey-piranha
+    kubevirt.io/dynamic-credentials-support: "true"
+    vm.kubevirt.io/template: rhel9-desktop-medium
+    vm.kubevirt.io/template.namespace: openshift
+    vm.kubevirt.io/template.revision: "1"
+    vm.kubevirt.io/template.version: v0.26.0
+  name: rhel9-bitey-piranha
+  namespace: beehive-virtual-machines
+  resourceVersion: "515347"
+  uid: ec02bf51-1fe9-4cfe-82f0-348d8181211f
+spec:
+  running: true
+  template:
+    metadata:
+      annotations:
+        vm.kubevirt.io/flavor: medium
+        vm.kubevirt.io/os: rhel9
+        vm.kubevirt.io/workload: desktop
+      creationTimestamp: null
+      labels:
+        kubevirt.io/domain: rhel9-bitey-piranha
+        kubevirt.io/size: medium
+    spec:
+      architecture: amd64
+      domain:
+        cpu:
+          cores: 1
+          sockets: 1
+          threads: 1
+          disks:
+            - disk:
+                bus: virtio
+              name: surly-piranha-disk
+            - disk:
+                bus: virtio
+              name: cloudinitdisk
+      volumes:
+        - persistentVolumeClaim:
+            claimName: surly-piranha-disk
+          name: surly-piranha-disk
+        - cloudInitConfigDrive:
+            userData: |
+              #cloud-config
+              user: cloud-user
+              password: redhat1234
+              chpasswd:
+                expire: false
+          name: cloudinitdisk

@@ -1,5 +1,3 @@
 resources:
-#- windows-server-2019.yaml
-#- rhel9-default.yaml
-# - rhel9.tpl.yaml
   - rhel9-beehive-vm1.yaml
+  - rhel9-surly-copy.yaml
