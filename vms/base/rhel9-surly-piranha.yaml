@@ -56,7 +56,7 @@ items:
             disks:
             - disk:
                 bus: virtio
-              name: rootdisk
+              name: surly-rootdisk
             - disk:
                 bus: virtio
               name: cloudinitdisk
