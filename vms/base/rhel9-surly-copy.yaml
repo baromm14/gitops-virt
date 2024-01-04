@@ -1,10 +1,8 @@
 apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
-  name: dr-vm
-  namespace: default
-  labels:
-    drapp: dr-vm
+  name: rhel9-surly-copy
+  namespace: beehive-virtual-machines
 spec:
   instancetype:
     name: u1.medium
@@ -18,19 +16,19 @@ spec:
           disks:
             - disk:
                 bus: virtio
-              name: dr-vm-disk
+              name: surly-copy-disk
             - disk:
                 bus: virtio
               name: cloudinitdisk
       volumes:
         - persistentVolumeClaim:
-            claimName: dr-vm-disk
-          name: dr-vm-disk
+            claimName: surly-copy-disk
+          name: surly-copy-disk
         - cloudInitConfigDrive:
             userData: |
               #cloud-config
               user: cloud-user
-              password: 0qmg-iy6s-w1dw
+              password: redhat1234
               chpasswd:
                 expire: false
           name: cloudinitdisk
