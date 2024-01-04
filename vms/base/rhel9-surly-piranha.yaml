@@ -22,8 +22,8 @@ items:
       vm.kubevirt.io/template.version: v0.26.0
     name: rhel9-surly-piranha
   spec:
-    dataVolumeTemplates:
-    - apiVersion: cdi.kubevirt.io/v1beta1
+    dataSourceRef:
+      apiGroup: cdi.kubevirt.io
       kind: VolumeImportSource
       metadata:
         name: rhel9-surly-piranha
@@ -81,9 +81,9 @@ items:
           pod: {}
         terminationGracePeriodSeconds: 180
         volumes:
-        - dataVolume:
-            name: rhel9-surly-piranha
-          name: rootdisk
+        - persistentVolumeClaim:
+            claimName: rhel9-surly-piranha
+          name: surly-rootdisk
         - cloudInitNoCloud:
             userData: |-
               #cloud-config
