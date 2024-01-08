@@ -23,14 +23,14 @@ items:
     name: rhel9-surly-piranha
   spec:
     dataSourceRef:
-      apiGroup: cdi.kubevirt.io
+      apiGroup: cdi.kubevirt.io/v1beta1
       kind: VolumeImportSource
       metadata:
         name: rhel9-surly-piranha
       spec:
         source:
           registry:
-            url: "docker://registry.redhat.io/rhel9/rhel-guest-image:9.3-748"
+            url: "registry.redhat.io/rhel9/rhel-guest-image:9.3-748"
             pullMethod: node
         storage:
           resources:
