@@ -68,7 +68,7 @@ items:
         terminationGracePeriodSeconds: 180
         volumes:
         - persistentVolumeClaim:
-            claimName: rhel9-surly-piranha
+            claimName: surly-piranha-disk
           name: surly-rootdisk
         - cloudInitNoCloud:
             userData: |-
