@@ -1,3 +1,4 @@
 resources:
   - rhel9-beehive-vm1.yaml
   - rhel9-surly-piranha.yaml
+  - ../../storage/base

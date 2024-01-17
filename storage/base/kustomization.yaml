@@ -1,4 +1,2 @@
 resources:
-- surly-piranha-disk.yaml
-commonAnnotations:
-  cdi.kubevirt.io/storage.deleteAfterCompletion: "false"
+- surly-import-source.yaml
