@@ -1,3 +1,0 @@
-# gitops-virt
-
-Test readme
