@@ -22,7 +22,7 @@ items:
       vm.kubevirt.io/template.version: v0.26.0
     name: base-vm
   spec:    
-    running: false
+    running: true
     template:
       metadata:
         annotations:
