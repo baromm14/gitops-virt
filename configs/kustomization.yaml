@@ -1,3 +1,4 @@
 resources:
-- pleasant-import-source.yaml
-- pleasant-piranha-disk.yaml
+- base-vm-disk.yaml
+- base-vm-import-source.yaml
+- base-vm.yaml
