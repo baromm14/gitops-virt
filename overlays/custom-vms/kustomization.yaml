@@ -1,4 +1,4 @@
 resources:
   - ../../configs
 patches:
-  - ./custom-vm.yaml
+  - custom-vm.yaml
