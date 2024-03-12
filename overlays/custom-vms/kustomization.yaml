@@ -1,4 +1,4 @@
 resources:
   - ../../configs
-patchesStrategicMerge:
+patches:
   - custom-vm.yaml
