@@ -5,6 +5,7 @@ metadata:
     app: new-rhel9-vm
   name: new-rhel9-vm
 spec:
+  running: false
   template:
     metadata:
       labels:
