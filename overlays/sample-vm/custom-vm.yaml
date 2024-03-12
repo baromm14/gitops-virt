@@ -17,7 +17,6 @@ spec:
           - disk:
               bus: virtio
             name: new-rhel9-vm-rootdisk
-        memory: 2Gi
       volumes:
       - persistentVolumeClaim:
           claimName: new-rhel9-vm-rootdisk
